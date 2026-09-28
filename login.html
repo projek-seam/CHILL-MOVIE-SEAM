@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login — Chill</title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<main class="auth-page">
+
+
+    <section class="auth-box">
+
+
+        <!-- LOGO -->
+
+        <div class="auth-logo">
+
+            <a
+                class="brand"
+                href="#"
+            >
+            <i class="fa-solid fa-clapperboard"></i>
+                CHILL
+            </a>
+
+        </div>
+
+
+        <!-- TITLE -->
+
+        <h1 class="auth-title">
+            Selamat datang kembali
+        </h1>
+
+
+        <p class="auth-subtitle">
+            Masuk untuk melanjutkan menonton
+            film favoritmu.
+        </p>
+
+
+        <!-- LOGIN FORM -->
+
+        <form id="loginForm">
+
+
+            <!-- USERNAME -->
+
+            <div class="field">
+
+                <label for="username">
+                    USERNAME
+                </label>
+
+                <input
+                    id="username"
+                    type="text"
+                    placeholder="Masukkan username"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="field">
+
+                <label for="password">
+                    PASSWORD
+                </label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Masukkan password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        id="passwordToggle"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- REMEMBER + FORGOT -->
+
+            <div class="auth-row">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                    >
+
+                    Ingat saya
+
+                </label>
+
+
+                <a
+                    href="#"
+                    id="forgot"
+                >
+                    Lupa password?
+                </a>
+
+            </div>
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button
+                class="auth-button"
+                href="index-chill.html"
+            >
+                Masuk
+            </button>
+
+
+        </form>
+
+
+        <!-- DIVIDER -->
+
+        <div class="divider">
+            atau
+        </div>
+
+
+        <!-- GOOGLE -->
+
+        <button
+            class="google-button"
+            id="googleLogin"
+            type="button"
+        >
+
+            <span>G</span>
+
+            &nbsp;
+
+            Masuk dengan Google
+
+        </button>
+
+
+        <!-- REGISTER -->
+
+        <p class="auth-footer">
+
+            Belum punya akun?
+
+            <a href="register.html">
+                Daftar sekarang
+            </a>
+
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

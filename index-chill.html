@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CHILL - Movie</title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+    <link rel="stylesheet" href="lengkap.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+
+    <!-- LOGO -->
+
+    <a
+        href="index-chill.html"
+        class="logo"
+    >
+
+    <i class="fa-solid fa-clapperboard"></i>
+
+        CHILL
+
+    </a>
+
+
+    <!-- MENU -->
+
+    <nav class="nav-menu">
+
+        <a href="index-chill.html">
+            Series
+        </a>
+
+        <a href="index-chill.html">
+            Film
+        </a>
+
+        <a href="footer.html">
+            Daftar Saya
+        </a>
+
+    </nav>
+
+
+    <!-- PROFILE -->
+
+<div class="profile">
+
+    <!-- PROFILE BUTTON -->
+
+    <button
+        class="profile-button"
+        id="profileButton"
+        type="button"
+    >
+
+        <img
+            src="assets/profile2.png"
+            alt="Profile"
+        >
+
+        <i
+            class="fa-solid fa-chevron-down"
+            id="profileArrow"
+        ></i>
+
+    </button>
+
+
+    <!-- PROFILE DROPDOWN -->
+
+    <div
+        class="profile-menu"
+        id="profileMenu"
+    >
+
+        <!-- BELUM LOGIN -->
+
+        <a
+            href="login.html"
+            id="loginBtn"
+        >
+
+            <i class="fa-solid fa-user"></i>
+
+            Login
+
+        </a>
+
+
+        <!-- SUDAH LOGIN -->
+
+        <a
+            href="footer.html"
+            class="logged-in-menu"
+            id="profileBtn"
+        >
+
+            <i class="fa-solid fa-user"></i>
+
+            Profil Saya
+
+        </a>
+
+
+        <a
+            href="footer.html"
+            class="logged-in-menu"
+            id="premiumBtn"
+        >
+
+            <i class="fa-solid fa-star"></i>
+
+            Ubah Premium
+
+        </a>
+
+
+        <a
+            href="index-chill.html"
+            class="logged-in-menu"
+            id="logoutBtn"
+        >
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Keluar
+
+        </a>
+
+    </div>
+
+</div>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+    <!-- VIDEO TRAILER -->
+
+    <div class="hero-video">
+
+    <!-- COVER -->
+    <img
+        id="heroCover"
+        class="hero-cover"
+        src=""
+        alt="Movie Cover"
+    >
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <!-- TRAILER -->
+    <iframe
+        id="trailerVideo"
+        src=""
+        title="Trailer Film"
+        frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+    <!-- CONTENT -->
+
+    <div class="hero-content">
+
+        <!-- JUDUL FILM -->
+
+    <h1 id="movieTitle">
+        Judul Film
+    </h1>
+
+
+    <!-- DESKRIPSI FILM -->
+
+    <p id="movieDescription">
+        Deskripsi film akan muncul di sini.
+    </p>
+
+        <div class="hero-actions">
+
+            <button
+                class="btn btn-primary"
+                id="startButton"
+            >
+
+            <i class="fa-solid fa-play"></i>
+
+            Mulai
+
+            </button>
+
+
+            <button
+                class="btn btn-secondary"
+                id="detailButton"
+            >
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            Selengkapnya
+
+            </button>
+
+
+            <span
+                class="age"
+                id="movieAge"
+            >
+                13+
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- SOUND -->
+
+    <button
+        class="sound-button"
+        id="soundButton"
+    >
+
+        <i
+            class="fa-solid fa-volume-high"
+            id="soundIcon"
+        ></i>
+
+    </button>
+
+</section>
+
+
+
+        <!-- LANJUTKAN MENONTON -->
+
+<section
+    class="continue-section login-required"
+    id="continueSection"
+>
+
+    <div class="section-header">
+
+        <h2>
+            Lanjutkan Menonton
+        </h2>
+
+    </div>
+
+
+    <!-- SLIDER -->
+
+    <div class="continue-wrapper">
+
+
+        <!-- TOMBOL KIRI -->
+
+        <button
+            class="slider-btn slider-prev"
+            id="prevBtn"
+        >
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <!-- POSTER CONTAINER -->
+
+        <div
+            class="continue-container"
+            id="continueContainer"
+        >
+
+                <!-- CARD 1 -->
+
+                <div class="movie-card">
+
+                    <div class="poster-wrapper">
+
+                        <img
+                            src="https://image.tmdb.org/t/p/original/jUdV706J4d3nUEbfimqVnGZqTbW.jpg"
+                            alt="Mutiny"                               
+                            >
+
+                            <span class="new-label">
+                                Baru Ditambahkan
+                            </span>
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width: 65%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                <img
+                    src="https://image.tmdb.org/t/p/original/6M1gVQwezhnUXxQB8lfHBpSyula.jpg"
+                    alt="One Last Shot"
+                    >
+
+                    <span class="new-label">
+                        Baru Ditambahkan
+                    </span>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 48%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                <img
+                src="https://image.tmdb.org/t/p/original/zj0UjmCotGH7BnMRbKEr5ZxQUZE.jpg"
+                alt="Operasi Pesta Copet"
+                >
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 72%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+             <!-- CARD 4 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/original/okGyC5iEsXzxqoAo9KUHtVjxccn.jpg"
+                        alt="Na Willa"
+                        >
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 35%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 5 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                <img
+                    src="https://image.tmdb.org/t/p/original/dsr9xjQez2Z9Ml0BxGQyXLY6vTp.jpg"
+                    alt="Sekawan Limo 2"
+                    >
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 55%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/original/fuNjXxeprUUhqpAcjrUeGu3qIaj.jpg"
+                        alt="The Mongoose"
+                        >
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 40%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 7 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/original/b4WXm5ahmtubYXy3wqHUG2nUKoM.jpg"
+                        alt="Alpha"
+                        >
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 40%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 8 -->
+
+            <div class="movie-card">
+
+                <div class="poster-wrapper">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/original/izuzDBvLM4ja1rt2EuA4hHBMF52.jpg"
+                        alt="Ghost in the cell"
+                        >
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        style="width: 65%;"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            </div>
+
+
+
+            <!-- TOMBOL KANAN -->
+
+            <button
+                class="slider-btn slider-next"
+                id="nextBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            </div>
+
+    </section>
+
+
+<!-- TOP RATING -->
+
+<section class="top-rating-section">
+
+    <div class="section-header">
+        <h2>Top Rating Film dan Series Hari Ini</h2>
+    </div>
+
+    <div class="top-rating-wrapper">
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="rating-slider-btn rating-prev"
+            id="ratingPrev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <!-- POSTER CONTAINER -->
+        <div
+            class="top-rating-container"
+            id="topRatingContainer">
+
+            <!-- CARD 1 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/4TU0PcHBIl0wPW5B6aVRGExOnHE.jpg"
+                    alt="The Scandal">
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/iofokHZoUB4Qhik4PflvJl8TT6a.jpg"
+                    alt="Law & Order: Special Victims Unit">
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/bArhvjRHl535XMaSh9VjInF2mSZ.jpg"
+                    alt="Resident Evil: Welcome to Raccoon City">
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/bAbBNVplg7h79sm94OyHeKk8Phz.jpg"
+                    alt="You+Me - Against the World">
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg"
+                    alt="Dutton Ranch">
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/fMECSPrTmRClSViMsXFYmiYIcWP.jpg"
+                    alt="Teach You a Lesson">
+            </div>
+
+
+            <!-- CARD 7 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/tcPc5ZMBO4y2BtCJMe3o2nwZb2B.jpg"
+                    alt="Off Campus">
+            </div>
+
+
+            <!-- CARD 8 -->
+            <div class="rating-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg"
+                    alt="The WONDERfools">
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="rating-slider-btn rating-next"
+            id="ratingNext">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- FILM TRENDING -->
+
+<section class="film-trending-section">
+
+    <div class="section-header">
+        <h2>Film Trending</h2>
+    </div>
+
+    <div class="film-trending-wrapper">
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="trending-slider-btn rating-prev"
+            id="trendingPrev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <!-- POSTER CONTAINER -->
+        <div
+            class="film-trending-container"
+            id="filmTrendingContainer">
+
+            <!-- CARD 1 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/cHKo3m8N1fwvEy2ZEr0xGmmMODV.jpg"
+                    alt="The Shadow's Edge">
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+                    alt="The Lord of the Rings: The Return of the King">
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/yihdXomYb5kTeSivtFndMy5iDmf.jpg"
+                    alt="Project Hail Mary">
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+                    alt="The Dark Knight">
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
+                    alt="The Shawshank Redemption">
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg"
+                    alt="Avatar Aang: The Last Airbender">
+            </div>
+
+
+            <!-- CARD 7 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg"
+                    alt="Swapped">
+            </div>
+
+
+            <!-- CARD 8 -->
+            <div class="trending-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+                    alt="Parasite">
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="trending-slider-btn trending-next"
+            id="trendingNext">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- FILM BARU -->
+
+<section class="film-baru-section">
+
+    <div class="section-header">
+        <h2>Film Baru</h2>
+    </div>
+
+    <div class="film-baru-wrapper">
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="baru-slider-btn baru-prev"
+            id="baruPrev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <!-- POSTER CONTAINER -->
+        <div
+            class="film-baru-container"
+            id="filmBaruContainer">
+
+            <!-- CARD 1 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/pu2VxGlpGwffOx292w18b1tv96j.jpg"
+                    alt="Mutiny">
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg.jpg"
+                    alt="The Runner">
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/gF6Ijrq5bixh4qemCuroRwXtbBc.jpg"
+                    alt="Ghost in the Cell">
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg"
+                    alt="One Last Shot">
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/jQol5xRU1e0JOL0ki4kDioj66Ah.jpg"
+                    alt="Hipotesis Cinta">
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/1ApfSA8JTqeha3GTFEY8syV4auq.jpg"
+                    alt="Heart of the Beast">
+            </div>
+
+
+            <!-- CARD 7 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/q6jhaPlAnzNFuvPDbDXBDbavIXE.jpg"
+                    alt="Operasi Pesta Copet">
+            </div>
+
+
+            <!-- CARD 8 -->
+            <div class="baru-card">
+                <img
+                    src="https://www.themoviedb.org/t/p/w1280/lz874WBix857NH2UpUC9oCOwRCx.jpg"
+                    alt="Na Willa">
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="baru-slider-btn baru-next"
+            id="baruNext">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <!-- =========================================
+             BRAND
+        ========================================== -->
+
+        <div class="footer-brand">
+
+            <a href="#" class="footer-logo">
+
+                <i class="fa-solid fa-clapperboard"></i>
+
+                <span>CHILL</span>
+
+            </a>
+
+
+            <p class="footer-copyright">
+                @2026 Chill All Rights Reserved.
+            </p>
+
+        </div>
+
+
+        <!-- GENRE -->
+
+        <div class="footer-column footer-genre">
+
+            <h3>Genre</h3>
+
+
+            <div class="genre-grid">
+
+                <a href="footer.html">
+                Aksi</a>
+
+                <a href="footer.html">
+                Drama</a>
+
+                <a href="footer.html">
+                Komedi</a>
+
+                <a href="footer.html">Sains & Alam</a>
+
+
+                <a href="footer.html">Anak-anak</a>
+
+                <a href="footer.html">Fantasi Ilmiah & Fantasi</a>
+
+                <a href="footer.html">Petualangan</a>
+
+                <a href="footer.html">Thriller</a>
+
+
+                <a href="footer.html">Anime</a>
+
+                <a href="footer.html">Kejahatan</a>
+
+                <a href="footer.html">Perang</a>
+
+                <a href="footer.html">Britania</a>
+
+
+                <a href="footer.html">KDrama</a>
+
+                <a href="footer.html">Romantis</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- BANTUAN -->
+
+        <div class="footer-column footer-help">
+
+            <h3>Bantuan</h3>
+
+            <a href="footer.html">FAQ</a>
+
+            <a href="footer.html">Kontak Kami</a>
+
+            <a href="footer.html">Privasi</a>
+
+            <a href="footer.html">Syarat & Ketentuan</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    </main>
+
+
+    <!-- =========================================
+     DETAIL MOVIE MODAL
+========================================= -->
+
+<div
+    class="movie-modal"
+    id="movieModal"
+>
+
+    <div class="movie-modal-content">
+
+        <!-- CLOSE -->
+
+        <button
+            class="movie-modal-close"
+            id="movieModalClose"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- BACKDROP -->
+
+        <div
+            class="movie-modal-hero"
+            id="modalHero"
+        >
+
+            <div class="movie-modal-gradient"></div>
+
+
+            <!-- INFO ATAS -->
+
+            <div class="movie-modal-info">
+
+                <h1 id="modalTitle">
+                    Judul Film
+                </h1>
+
+
+                <div class="movie-modal-buttons">
+
+                    <button
+                        class="modal-start"
+                        id="modalStart"
+                    >
+                        <i class="fa-solid fa-play"></i>
+                        Mulai
+                    </button>
+
+
+                    <button
+                        class="modal-add"
+                    >
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DETAIL -->
+
+        <div class="movie-modal-detail">
+
+
+            <!-- KIRI -->
+
+            <div class="modal-detail-left">
+
+                <div class="modal-meta">
+
+                    <span id="modalYear">
+                        2026
+                    </span>
+
+                    <span id="modalDuration">
+                        109 min
+                    </span>
+
+                    <span
+                        class="modal-age"
+                        id="modalAge"
+                    >
+                        17+
+                    </span>
+
+                </div>
+
+
+                <p id="modalDescription">
+                    Deskripsi film.
+                </p>
+
+            </div>
+
+
+            <!-- KANAN -->
+
+            <div class="modal-detail-right">
+
+                <div class="detail-row">
+
+                    <span>
+                        Cast
+                    </span>
+
+                    <strong id="modalCast">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Genres
+                    </span>
+
+                    <strong id="modalGenres">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Pembuat Film
+                    </span>
+
+                    <strong id="modalDirector">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILM SERUPA -->
+
+        <div class="similar-section">
+
+            <h2>
+                Film Serupa
+            </h2>
+
+            <div
+                class="similar-movies"
+                id="similarMovies"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- JAVASCRIPT -->
+    
+    <script src="movie.js"></script>
+    <script src="lengkap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
