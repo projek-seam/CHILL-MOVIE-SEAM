@@ -387,6 +387,17 @@ body {
     transform: scale(0.98);
 }
 
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.google-button i {
+    font-size: 16px;
+}
+
 
 /* =========================================
    DIVIDER
