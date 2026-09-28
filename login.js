@@ -64,7 +64,7 @@ loginForm.addEventListener(
     // KEMBALI KE HOME
     // ================================
 
-    window.location.href = "index-chill.html";
+    window.location.href = "index.html";
 
 });
 

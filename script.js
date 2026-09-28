@@ -435,7 +435,7 @@ if (logoutBtn) {
             /* KEMBALI KE HOME */
 
             window.location.href =
-                "index-chill.html";
+                "index.html";
 
         }
     );
