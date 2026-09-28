@@ -80,22 +80,26 @@ body {
 /* NAVIGATION */
 
 .nav-menu {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
     display: flex;
     align-items: center;
 
-    gap: clamp(25px, 4.5vw, 70px);
-
-    margin-left: clamp(30px, 5vw, 90px);
+    gap: 60px;
 }
+
 
 .nav-menu a {
     color: #fff;
 
     text-decoration: none;
 
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(15px, 2vw, 30px);
 
-    font-weight: 500;
+    font-weight: 530;
 
     white-space: nowrap;
 
